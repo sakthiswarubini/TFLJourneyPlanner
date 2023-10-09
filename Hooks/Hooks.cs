@@ -39,7 +39,7 @@ namespace TFLJourneyPlanner.Hooks
         [AfterFeature]
         public static void AfterFeature()
         {
-            //Console.WriteLine("Running after feature");
+            
         }
 
         [BeforeScenario(Order = 1)]
@@ -70,7 +70,7 @@ namespace TFLJourneyPlanner.Hooks
 
             var driver = _container.Resolve<IWebDriver>();
 
-            //When scenario passed
+            
             if (scenarioContext.TestError == null)
             {
                 if (stepType == "Given")

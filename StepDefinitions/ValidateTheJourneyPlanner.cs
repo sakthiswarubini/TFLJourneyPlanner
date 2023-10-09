@@ -131,13 +131,7 @@ namespace TFLJourneyPlanner.StepDefinitions
             journeyResultsPage = planAJourneyPage.PlanMyJourney();
         }
 
-        /*[Then(@"I click on '([^']*)' button in journey results page")]
-        public void ThenIClickOnButtonInJourneyResultsPage(string buttonText)
-        {
-            journeyResultsPage.ClickEditJourneyButton(buttonText);
-        }*/
-
-        
+                
         [When(@"I click on Edit journey button in journey results page")]
         public void WhenIClickOnEditJourneyButtonInJourneyResultsPage()
         {

@@ -19,9 +19,9 @@ namespace TFLJourneyPlanner.PageObject
         }
 
         private IWebElement OriginField => driver.FindElement(By.XPath("//input[@id = 'InputFrom' and @placeholder = 'From']"));
-        //private IWebElement selectOption  => driver.FindElement(By.XPath("//span[@class='tt-suggestions']/child::div/child::span[@class= 'stop-name']"));
+        
         private IWebElement DestinationField => driver.FindElement(By.XPath("//input[@id = 'InputTo' and @placeholder = 'To']"));
-       // private IWebElement selectDestinationOption => driver.FindElement(By.XPath("//span[@class='tt-suggestions']/child::div/child::span[@class= 'stop-name']"));
+       
 
         private IWebElement UpdateJourneyButton  => driver.FindElement(By.XPath("//input[@id= 'plan-journey-button']"));
         private IWebElement ClearContent =>  driver.FindElement(By.LinkText("Clear From location"));
